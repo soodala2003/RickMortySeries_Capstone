@@ -1,0 +1,31 @@
+.header {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row2 {
+  align-content: space-around; 
+  font-weight: bold; 
+  font-style: italic;
+  font-size: 30px; 
+  text-align: center;
+}
+
+.row3 {
+  align-content: space-around;
+}
+
+.image {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid lightcoral;
+}
+
+.image2 {
+  height: 50px; 
+  margin-right: 0; 
+  vertical-align: bottom;
+}
