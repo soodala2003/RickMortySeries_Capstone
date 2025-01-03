@@ -11,7 +11,7 @@ const Navigation = () => {
     <div>
       <Navbar expand="lg" className="bg-body-tertiary"> {/* bg="primary" data-bs-theme="dark"> */}
         <Container fluid>
-          <Navbar.Brand href="#">Home</Navbar.Brand>
+          <Navbar.Brand href="/">Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
