@@ -19,7 +19,6 @@ const PORT = process.env.PORT || 5000;
   credentials: true 
 };  */
 //app.use(cors(corsOptions)); 
-
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
