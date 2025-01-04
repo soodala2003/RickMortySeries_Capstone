@@ -8,6 +8,7 @@ const season1Schema = new mongoose.Schema(
     characters: { type: Array },
     url: { type: String },
     created: { type: String },
+    index: { type: Number},
   }, {
     timestamps: true // createdAt, updatedAt
   }

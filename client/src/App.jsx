@@ -8,6 +8,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import Season1 from './pages/Season1';
+import Episode from './pages/Episode';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/api/login" element={<LoginPage />} />
           <Route exact path="/api/season1" element={<Season1 />} />
+          <Route exact path="/api/season1/:id" element={<Episode />} />
         </Routes>
       </Container>
     </Router>

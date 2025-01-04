@@ -46,6 +46,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
+    color: rgba(11, 11, 121, 0.964);
+    font-weight: 600;
 }
 
 .episode_li {

@@ -41,7 +41,7 @@ export default function Season1 () {
             <span className="epidose_title">{episode.name}</span>
             <span className="episode_date">
               <span>{episode.air_date}</span>
-              <Link to={`/api/season1/${episode._id}`} className="view_btn">View</Link>
+              <Link to={`/api/season1/${episode.id}`} className="view_btn">View</Link>
             </span>
           </li>
         ))}
