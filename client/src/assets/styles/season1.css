@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+/* :root {
+    --black: #1c1c1c;
+    --gray: #7e7e7e;
+    --gray-light: #e4e4e4;
+    --red: #b30000;
+    --font-size-base: 1rem;
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --border-radius: 10px;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: var(--font-size-base);
+    background-color: #FAF5EE;
+}
+
+.season_container {
+    padding: 10px 0; 
+    margin-left: 30px;
+    margin-right: 30px; 
+    white-space: pre-wrap;
+}
+
+.episodes_heading {
+    margin-top: 8px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(11, 11, 121, 0.964);
+}
+
+.episode_ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.episode_span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.episode_li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+    transition: filter 0.1s;
+}
+
+.episode_li:not(:last-child) {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.episode_li:hover {
+    filter: none;
+}
+
+.episode_ul:hover .episode_li {
+    filter: blur(3px);
+}
+
+.episode_ul:hover .episode_li:hover {
+    filter: none;
+}
+
+.epidose_title {
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-style: italic;
+}
+
+.episode_date {
+    font-size: var(--font-size-base);
+    color: #7e7e7e;
+    width: 280px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.episode_date span {
+    padding-top: 5px;
+}
+
+.view_btn {
+    background-color: rgba(11, 11, 121, 0.964); 
+    border-radius: 10px;
+    color: white; 
+    /* display: inline-block; */
+    padding: 5px 20px;
+    text-decoration: none;
+    margin-bottom: 4px; 
+    cursor: pointer;
+}
