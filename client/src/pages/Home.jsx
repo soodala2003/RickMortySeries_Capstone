@@ -15,43 +15,43 @@ function Home() {
   return (
     <Carousel>
       <Carousel.Item>
-        <Link className="season1" to={`/api/episodes1`}><b>Season 1</b></Link>
+        <Link className="season1" to={`/api/season1`}><b>Season 1</b></Link>
         <div className="carousel">
           <Image src={season1} alt="Rick_and_Morty_season1" rounded />      
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season2" to={`/api/episodes2`}><b>Season 2</b></Link>
+        <Link className="season2" to={`/api/season2`}><b>Season 2</b></Link>
         <div className="carousel">
           <Image src={season2} alt="Rick_and_Morty_season2" rounded />
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season3" to={`/api/episodes3`}><b>Season 3</b></Link>
+        <Link className="season3" to={`/api/season3`}><b>Season 3</b></Link>
         <div className="carousel">
           <Image src={season3} alt="Rick_and_Morty_season3" rounded />
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season4" to={`/api/episodes4`}><b>Season 4</b></Link>
+        <Link className="season4" to={`/api/season4`}><b>Season 4</b></Link>
         <div className="carousel">
           <Image src={season4} alt="Rick_and_Morty_season4" rounded /> 
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season5" to={`/api/episodes5`}><b>Season 5</b></Link>
+        <Link className="season5" to={`/api/season5`}><b>Season 5</b></Link>
         <div className="carousel">
           <Image src={season5} alt="Rick_and_Morty_season5" rounded />
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season6" to={`/api/episodes6`}><b>Season 6</b></Link>
+        <Link className="season6" to={`/api/season6`}><b>Season 6</b></Link>
         <div className="carousel">
           <Image src={season6} alt="Rick_and_Morty_season6" rounded />
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season7" to={`/api/episodes7`}><b>Season 7</b></Link>
+        <Link className="season7" to={`/api/season7`}><b>Season 7</b></Link>
         <div className="carousel">
           <Image src={season7} alt="Rick_and_Morty_season7" rounded />
         </div>

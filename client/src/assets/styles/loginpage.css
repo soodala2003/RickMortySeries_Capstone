@@ -1,0 +1,82 @@
+.container-fluid {
+    background-color: #e6f5fa;
+}
+
+.login-page {
+    width: 400px;
+    height: 550px;
+    margin: 30px 30px;
+    border: 2px solid gray;
+    box-shadow: 5px 10px 10px gray; 
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: center; 
+}   
+
+.login-img {
+    border-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.login-img img {
+    width: 190px;
+    height: 190px;
+}
+
+.item1 {
+    font-size: 40px; 
+    margin-top: 0; 
+    text-align: center;
+}
+
+.item2 {
+    margin-top: 10px;
+} 
+
+.item3 {
+    margin-top: 0;
+}
+
+#email {
+    border-style: none;
+    background-color: gainsboro;
+    text-align: center;
+    color: rgba(27, 23, 23, 0.441);
+    width: 200px;
+    height: 50px; 
+    margin: 10px 95px;
+}
+
+#password {
+    border-style: none;
+    background-color: gainsboro;
+    text-align: center;
+    color: rgba(27, 23, 23, 0.441);
+    width: 200px;
+    height: 50px;
+    margin: 10px 95px;
+}
+
+.item4 {
+    border-radius: 10px;
+    background-color: rgb(16, 219, 242);
+    text-align: center;
+    color: white;
+    align-content: center;
+    width: 150px;
+    height: 40px;
+    margin: 20px 123px;
+}
+
+.item5 {
+    text-align: center;
+}
+
+#forgetPW {
+    color: orange;
+    text-decoration: none; 
+}
