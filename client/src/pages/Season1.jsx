@@ -10,10 +10,10 @@ export default function Season1 () {
   useEffect(() => {
     const getEpisodes = async () => {
       try {
+        //const response = await axios.get(`https://capstone-back-end-ft5y.onrender.com/api/season1`);
+        //const results = response.data.data;
         const response = await axios.get(`http://localhost:5000/api/season1`);
         const results = response.data.data;
-        //const response = await axios.get(`https://rickandmortyapi.com/api/episode`);
-        //const results = response.data.results;
         setEpisodes(results);
       } catch (e) {
         console.error('Error fetching episodes', e);
@@ -38,11 +38,10 @@ export default function Season1 () {
         </li>
         {episodes.map((episode) => (
           <li key={episode._id} className="episode_li">
-            <span className="epidose_title">{episode.name}</span>
-            <span className="episode_date">
-              <span>{episode.air_date}</span>
-              <Link to={`/api/season1/${episode.id}`} className="view_btn">View</Link>
-            </span>
+            <Link to={`/api/season1/${episode._id}`} className="epidose_title">{episode.name}</Link>
+            <Link to={`/api/season1/${episode._id}`} className="episode_date">{episode.air_date}</Link>
+              {/* <span>{episode.air_date}</span> */}
+              {/* <Link to={`/api/season1/${episode.id}`} className="view_btn">View</Link> */}
           </li>
         ))}
       </ul>
