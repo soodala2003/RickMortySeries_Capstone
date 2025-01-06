@@ -1,8 +1,8 @@
-.container-fluid {
+/* .container_fluid {
     background-color: #e6f5fa;
-}
+} */
 
-.login-page {
+.login_page {
     width: 400px;
     height: 550px;
     margin: 30px 30px;
@@ -16,13 +16,13 @@
     justify-content: center; 
 }   
 
-.login-img {
+.login_img {
     border-style: none;
     display: flex;
     justify-content: center;
 }
 
-.login-img img {
+.login_img img {
     width: 190px;
     height: 190px;
 }

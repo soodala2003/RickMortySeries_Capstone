@@ -9,10 +9,10 @@ const LoginPage = () => {
   });
   
   return (
-    <div className="container-fluid">
+    <div className="container_fluid">
       <div className="d-flex flex-column">
-        <div className="login-page"> 
-          <div className="login-img"> 
+        <div className="login_page"> 
+          <div className="login_img"> 
             <img src={login} alt="login" />
           </div> 
           <div className="item1"><b>LOGIN</b></div>

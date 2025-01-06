@@ -38,7 +38,7 @@ export default function Episode () {
           <span>Episode {episode.num} : {episode.name}</span>
           <div className="btns">
             <Link to={``} className="watch_btn">Watch</Link>
-            <Link to={`/api/season1/episode1/reviews`} className="review_btn">Reviews</Link>
+            <Link to={`/api/season1/episodes/reviews`} className="review_btn">Reviews</Link>
           </div>
         </div>
         <div><h4><b>Plot :</b></h4> 
