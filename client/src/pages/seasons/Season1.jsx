@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import '../assets/styles/season1.css';
+import '../../assets/styles/seasons.css';
 
 export default function Season1 () {
   const [episodes, setEpisodes] = useState([]);
@@ -11,7 +11,6 @@ export default function Season1 () {
     const getEpisodes = async () => {
       try {
         //const response = await axios.get(`https://capstone-back-end-ft5y.onrender.com/api/season1`);
-        //const results = response.data.data;
         const response = await axios.get(`http://localhost:5000/api/season1`);
         const results = response.data.data;
         setEpisodes(results);
@@ -29,10 +28,11 @@ export default function Season1 () {
   return (
     <div className="season_container">
       <div className="episodes">
-        <h2 className="episodes_heading"><b>Season 1</b></h2>
-      </div>
+        <h2 className="episodes_heading1"><b>Season 1</b></h2>
+      </div> 
+
       <ul className="episode_ul">
-        <li className="episode_span">
+        <li className="episode_span1">
           <span>EPISODES</span>
           <span>Original Air Date</span>
         </li>

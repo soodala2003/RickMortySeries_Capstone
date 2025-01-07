@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
+/* for S1Episode page */
 .episode_container {
     padding: 10px 0; 
     margin-left: 30px;
@@ -13,7 +14,7 @@
     margin-right: 10px;
 }
 
-.episode_title {
+.episode_title1 {
     /* font-family: 'Poppins', sans-serif; */
     font-size: 30px;
     color: rgba(11, 11, 121, 0.964);
@@ -44,3 +45,24 @@
     margin: 10px 0;
 }
 
+/* for S1Episode page */
+.episode_title2 {
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 30px;
+    color: rgba(56, 155, 160, 0.964);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.watch_btn2, .review_btn2 {
+    background-color: rgba(56, 155, 160, 0.964); 
+    border-radius: 10px;
+    color: white; 
+    font-size: 20px;
+    padding: 7px 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+} 

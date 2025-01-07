@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 import '../assets/styles/header.css';
 import mainIMG from '../assets/images/img.jpg';
-import loginIMG from '../assets/images/login-user.jpg';
 
 const Header = () => {
   return (
@@ -15,8 +15,10 @@ const Header = () => {
           Rick and Morty
         </div>
         <div className="row3">
-          <Link className="login" to={`/api/login`}>LOGIN/SIGNUP</Link>
-          <img className="image2" src={loginIMG} alt="Login Icon" />
+          <Button variant="outline-primary" className="login_btn">
+            <Link className="login" to={`/api/login`}>LOGIN</Link></Button>
+          <Button variant="dark" className="signup_btn">
+            <Link className="signup" to={``}>SIGNUP</Link></Button>
         </div>
       </div>
     </div>

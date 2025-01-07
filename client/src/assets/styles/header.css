@@ -14,14 +14,27 @@
 }
 
 .row3 {
-  /* display: flex;
+  /*display: flex;
   flex-direction: row;
   align-items:first baseline;  */
   align-content: space-around;
 } 
 
+.login_btn, .signup_btn {
+  margin-right: 10px;
+}
+
 .login {
-  text-decoration: none;
+  text-decoration: none; 
+}
+
+.signup {
+  color:white;
+  text-decoration: none; 
+}
+
+.login:hover, .signup:hover {
+  color: white;
 }
 
 .image {
@@ -31,9 +44,9 @@
   border: 3px solid lightcoral;
 }
 
-.image2 {
+/* .image2 {
   height: 50px; 
   margin-right: 0; 
   border-radius: 50px;
   vertical-align: bottom;
-}
+} */

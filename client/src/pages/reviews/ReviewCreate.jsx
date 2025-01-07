@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-//import useToast from '@chakra-ui/toast';
-//import { useToast } from '@chakra-ui/react';
+import { useReviewStore } from "../../store/reviewStore";
+import { ToastContainer, toast } from 'react-toastify';
 import { Link } from "react-router-dom";
-
-import { useReviewStore } from "../store/reviewStore";
-import '../assets/styles/reviews.css';
+import '../../assets/styles/reviews.css';
 
 const ReviewCreatePage = () => {
   const [newReview, setNewReview] = useState({
@@ -17,29 +15,15 @@ const ReviewCreatePage = () => {
     published: "",
   });
 
-  //const toast = useToast();
   const { createReview } = useReviewStore();
 
   const handleAddReview = async () => {
     const {success, message} = await createReview(newReview);
+
     if (!success) {
-      alert("Please provide all fields of Title, User, Review, and Published Date.");
-      /* toast({
-        title: "Error",
-        description: message,
-        status: "error",
-        duration: 3000,
-        isClosable: true
-      }); */
+      toast.warn("Please provide fields of Title, User, Review, and Published Date.");
     } else {
-      alert(message);
-      /* toast({
-        title: "Success",
-        description: message,
-        status: "success",
-        duration: 3000,
-        isClosable: true
-      }); */
+      toast.success(message);
     }
   };
 
@@ -47,7 +31,7 @@ const ReviewCreatePage = () => {
     <div className="review_create">
         <div className="review_box">
           <h1><b>Post Review</b></h1>
-          <h3>Season 1</h3>
+          <br></br>
           <input
             type="text"
             placeholder=' Review Title'
@@ -82,10 +66,10 @@ const ReviewCreatePage = () => {
           <button onClick={handleAddReview}>
             <Link interval="1000" className="btn_add" to={``}>Add Review</Link>
           </button>
+          <ToastContainer position="top-center" autoClose={3000} closeButton={false} theme="dark"/>
         </div>
     </div>
-
   );
-
 };
+
 export default ReviewCreatePage;

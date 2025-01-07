@@ -2,18 +2,25 @@
     background-color: #e6f5fa;
 } */
 
+.login_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
 .login_page {
     width: 400px;
     height: 550px;
-    margin: 30px 30px;
+    /* margin: 30px 30px 30px 200px; */
+    margin-top: 30px;
     border: 2px solid gray;
     box-shadow: 5px 10px 10px gray; 
     background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-content: space-evenly;
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;  
 }   
 
 .login_img {
@@ -63,7 +70,7 @@
 
 .item4 {
     border-radius: 10px;
-    background-color: rgb(16, 219, 242);
+    background-color: #0d6efd;
     text-align: center;
     color: white;
     align-content: center;

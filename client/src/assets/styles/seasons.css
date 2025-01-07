@@ -18,6 +18,7 @@ body {
     background-color: #FAF5EE;
 } 
 
+/* for Season1 page*/
 .season_container {
     padding: 10px 0; 
     margin-left: 30px;
@@ -25,9 +26,38 @@ body {
     white-space: pre-wrap;
 }
 
-.episodes_heading {
+/* .episodes {
+    font-size: 30px;
+    color: rgba(11, 11, 121, 0.964);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+/* .invisible {
+    overflow: hidden;
+} */
+
+/* .episodes span {
+    font-weight: 600;
+    margin-right: 250px;
+} */
+
+/* .review_btn {
+    background-color: rgba(11, 11, 121, 0.964); 
+    border-radius: 10px;
+    color: white; 
+    font-size: 20px;
+    padding: 7px 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}  */
+
+.episodes_heading1 {
     margin-top: 8px;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-align: center;
     font-size: 30px;
     color: rgba(11, 11, 121, 0.964);
@@ -41,7 +71,7 @@ body {
     flex-direction: column;
 }
 
-.episode_span {
+.episode_span1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -102,5 +132,20 @@ body {
     color: #535bf2;
 }
 
+/* for Season2 page*/
+.episodes_heading2 {
+    margin-top: 8px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(56, 155, 160, 0.964);
+}
 
+.episode_span2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    color: rgba(56, 155, 160, 0.964);
+    font-weight: 600;
+}
 
