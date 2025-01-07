@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const season1Schema = new mongoose.Schema(
+const season2Schema = new mongoose.Schema(
   {
     name: { type: String },
     air_date: { type: String },
@@ -14,4 +14,4 @@ const season1Schema = new mongoose.Schema(
   }
 );
  
-export default mongoose.model("Season1", season1Schema);
+export default mongoose.model("Season2", season2Schema);
