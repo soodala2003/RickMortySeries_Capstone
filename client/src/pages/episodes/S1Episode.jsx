@@ -13,8 +13,8 @@ export default function S1Episode () {
   useEffect(() => {
     const getEpisode = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/season1/${id}`);
-        //const response = await axios.get(`https://capstone-back-end-ft5y.onrender.com/api/season1/${id}`);
+        //const response = await axios.get(`http://localhost:5000/api/season1/${id}`);
+        const response = await axios.get(`https://capstone-back-end-ft5y.onrender.com/api/season1/${id}`);
         const result = response.data.data;
         setEpisode(result);
       } catch (error) {

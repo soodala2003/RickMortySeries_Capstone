@@ -6,9 +6,6 @@ import '../../assets/styles/reviews.css';
 
 const ReviewCreatePage = () => {
   const [newReview, setNewReview] = useState({
-    episode: "S01E01",
-    id: 1,
-    name: "Pilot",
     title: "",
     user: "",
     content: "",

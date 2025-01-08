@@ -22,11 +22,6 @@ const Navigation = () => {
               <NavDropdown title="Episodes" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/api/season1">Season 1</NavDropdown.Item>
                 <NavDropdown.Item href="/api/season2">Season 2</NavDropdown.Item>
-                {/* <NavDropdown.Item href="/api/season3">Season 3</NavDropdown.Item>
-                <NavDropdown.Item href="#">Season 4</NavDropdown.Item>
-                <NavDropdown.Item href="#">Season 5</NavDropdown.Item>
-                <NavDropdown.Item href="#">Season 6</NavDropdown.Item>
-                <NavDropdown.Item href="#">Season 7</NavDropdown.Item> */}
               </NavDropdown>
 
               <Nav.Link href="/api/reviews">Reviews</Nav.Link>

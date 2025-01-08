@@ -11,7 +11,8 @@ export const useReviewStore = create((set) => ({
     if (!newReview.title || !newReview.user || !newReview.content || !newReview.published) {
       return { success: false, message:"Please provide fields of Title, User, Review, and Published Date." };
     }
-    const res = await fetch(`http://localhost:5000/api/reviews`, {
+    // http://localhost:5000 
+    const res = await fetch(`https://capstone-back-end-ft5y.onrender.com/api/reviews`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +31,7 @@ export const useReviewStore = create((set) => ({
     //set({ reviews: results.data });
     
     try {
-      const response = await axios.get(`http://localhost:5000/api/reviews`);
+      const response = await axios.get(`https://capstone-back-end-ft5y.onrender.com/api/reviews`);
       const results = response.data.data;
       set({ reviews: results });
     } catch (error) {
@@ -40,7 +41,7 @@ export const useReviewStore = create((set) => ({
   },
 
   updateReview: async (reviewId, updatedReview) => {
-    const res = await fetch(`http://localhost:5000/api/reviews/${reviewId}`, {
+    const res = await fetch(`https://capstone-back-end-ft5y.onrender.com/api/reviews/${reviewId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +59,7 @@ export const useReviewStore = create((set) => ({
   },
 
   deleteReview: async (reviewId) => {
-    const res = await fetch(`http://localhost:5000/api/reviews/${reviewId}`, {
+    const res = await fetch(`https://capstone-back-end-ft5y.onrender.com/api/reviews/${reviewId}`, {
       method: "DELETE",
     });
     const result = await res.json();
