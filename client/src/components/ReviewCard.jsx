@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-//import { Link } from 'react-router-dom';
 import { useReviewStore } from '../store/reviewStore';
 import { ToastContainer, toast } from 'react-toastify';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import '../assets/styles/reviews.css';
-//import 'react-toastify/dist/ReactToastify.css';
 
 const ReviewCard = ({ review }) => {
   const [show, setShow] = useState(false);
@@ -16,13 +14,13 @@ const ReviewCard = ({ review }) => {
   const { updateReview, deleteReview } = useReviewStore();
 
   const handleUpdateReview = async (reviewId, updatedReview) => {
-    const {success, message} = await updateReview(reviewId, updatedReview);
+    const {success} = await updateReview(reviewId, updatedReview);
     setShow(false);
 
     if (!success) { 
       toast.error("Error in updating review: Review is NOT Updated.");
     } else {
-      toast.success(message);
+      toast.success("Review updated successfully");
     }   
   };
 
@@ -32,7 +30,7 @@ const ReviewCard = ({ review }) => {
     if (!success) {
       toast.error("Error in deleting review: Review is NOT Deleted.");
     } else {
-      toast.success("Review deleted successfully.");
+      toast.success("Review deleted successfully");
     }
   };
   
@@ -72,8 +70,8 @@ const ReviewCard = ({ review }) => {
               name='review'
               value={updatedReview.review}
               placeholder=' Enter Review'
-              rows='3' 
-              cols='50'
+              rows='5' 
+              cols='30'
               onChange={(e) => setUpdatedReview({ ...updatedReview, content: e.target.value })}>
             </textarea><br></br>
 

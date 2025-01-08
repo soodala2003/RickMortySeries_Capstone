@@ -4,6 +4,7 @@
 https://capstone-back-end-ft5y.onrender.com
 
 ## Front-End URL: 
+https://capstone-front-end-1g1t.onrender.com
 
 This application is a blog of the animation series, and it allows users to post, update and delete their reviews after watching the animations.
 

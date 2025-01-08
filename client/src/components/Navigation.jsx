@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import '../assets/styles/header.css';
 
 const Navigation = () => {
   return (
@@ -20,23 +22,17 @@ const Navigation = () => {
               navbarScroll
             >
               <NavDropdown title="Episodes" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/api/season1">Season 1</NavDropdown.Item>
-                <NavDropdown.Item href="/api/season2">Season 2</NavDropdown.Item>
+                <NavDropdown.Item> 
+                  <Link className="links" to={`/api/season1`}>Season 1</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>  
+                  <Link className="links" to={`/api/season2`}>Season 2</Link>
+                </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="/api/reviews">Reviews</Nav.Link>
-              
-              {/* <NavDropdown title="Reviews" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/api/season1/reviews">Season 1</NavDropdown.Item>
-                <NavDropdown.Item href="/api/season2/reviews">Season 2</NavDropdown.Item> */}
-                {/*} <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item> 
-              </NavDropdown>
-              {/* <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link> */}
+              <Nav.Link>
+                <Link className="links" to={`/api/reviews`}>Reviews</Link>
+              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control

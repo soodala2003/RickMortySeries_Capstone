@@ -47,8 +47,8 @@ const ReviewCreatePage = () => {
             id="text"
             placeholder=' Enter Review'
             name="review"
-            rows="3" 
-            cols="50"
+            rows="5" 
+            cols="10"
             value={newReview.content}
             onChange={(e) => setNewReview({ ...newReview, content: e.target.value })}>
           </textarea><br></br>
