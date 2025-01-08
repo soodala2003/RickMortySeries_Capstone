@@ -18,7 +18,7 @@ const Header = () => {
           <Button variant="outline-primary" className="login_btn">
             <Link className="login" to={`/api/login`}>LOGIN</Link></Button>
           <Button variant="dark" className="signup_btn">
-            <Link className="signup" to={``}>SIGNUP</Link></Button>
+            <Link className="signup" to={`/api/signup`}>SIGNUP</Link></Button>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import { CharacterCard } from '../../components/CharacterCard';
 import axios from 'axios';
 import '../../assets/styles/episodes.css';
 
@@ -45,23 +46,17 @@ export default function S2Episode () {
             Ex consequat amet do ut do voluptate sint ipsum non.
         </p></div>
         <div className="characters_container">
-          <h4><b>Characters</b></h4>
-          <div>
-            image
-          </div>
-          
-
-        </div>
-
-      </div>
-      <div className="review_container">
-        {/* <span>Reviews</span> */}
-        {/* <div>
-          {reviews.map((review) => (
-            <ReviewCard key={ReviewCard.episode} review={review} />
+          <h4><b>Characters :</b></h4>
+          <div className="characters">
+          {episode.characters.map((character, index) => (
+            <li key={index}>
+              <div className="character_list">
+                <CharacterCard key={character.id} character={character} />
+              </div>
+            </li>
           ))}
-        </div> */}
-
+          </div>
+        </div>
       </div>
     </div>
   );
