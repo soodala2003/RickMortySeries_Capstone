@@ -9,7 +9,7 @@
 }
 
 .login_page {
-    width: 400px;
+    width: 450px;
     height: 550px;
     /* margin: 30px 30px 30px 200px; */
     margin-top: 20px;
@@ -101,6 +101,6 @@
     text-decoration: none; 
 }
 
-.signin_btn {
+.user_btns {
     text-decoration: none; 
 }

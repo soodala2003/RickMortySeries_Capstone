@@ -24,8 +24,18 @@
     justify-content: space-between;
 }
 
+.season1_link {
+    color: rgba(11, 11, 121, 0.964);
+    text-decoration: none;
+}
+
 .btns {
     margin-left: 20px;
+}
+
+.season2_link {
+    color: rgba(56, 155, 160, 0.964);
+    text-decoration: none;
 }
 
 .watch_btn {

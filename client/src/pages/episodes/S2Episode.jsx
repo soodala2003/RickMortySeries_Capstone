@@ -33,7 +33,7 @@ export default function S2Episode () {
     <div className="episode_container">
       <div className="episode">
         <div className="episode_title2">
-        <h2><b>Season 2</b></h2>
+          <Link className="season2_link" to={`/api/season2`}><b>Season 2</b></Link>
           <span>Episode {episode.num} : {episode.name}</span>
           <div className="btns">
             <Link to={``} className="watch_btn2">Watch</Link>

@@ -27,19 +27,19 @@ function Home() {
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season3" to={`/api/season3`}><b>Season 3</b></Link>
+        <Link className="season3" to={``}><b>Season 3</b></Link>
         <div className="carousel">
           <Image src={season3} alt="Rick_and_Morty_season3" rounded />
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season4" to={`/api/season4`}><b>Season 4</b></Link>
+        <Link className="season4" to={``}><b>Season 4</b></Link>
         <div className="carousel">
           <Image src={season4} alt="Rick_and_Morty_season4" rounded /> 
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <Link className="season5" to={`/api/season5`}><b>Season 5</b></Link>
+        <Link className="season5" to={``}><b>Season 5</b></Link>
         <div className="carousel">
           <Image src={season5} alt="Rick_and_Morty_season5" rounded />
         </div>

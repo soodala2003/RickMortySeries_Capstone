@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Container from 'react-bootstrap/Container';
 
@@ -20,13 +21,14 @@ import ReviewCreate from './pages/reviews/ReviewCreate';
 function App() {
   return (
     <Router>
+      <ToastContainer />
       <Container> 
         <Header />
         <Navigation />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/api/login" element={<LoginPage />} />
-          <Route exact path="/api/signup" element={<SignupPage />} />
+          <Route exact path="/api/users/login" element={<LoginPage />} />
+          <Route exact path="/api/users/signup" element={<SignupPage />} />
           <Route exact path="/api/season1" element={<Season1 />} />
           <Route exact path="/api/season2" element={<Season2 />} />
           <Route exact path="/api/season1/:id" element={<S1Episode />} />
