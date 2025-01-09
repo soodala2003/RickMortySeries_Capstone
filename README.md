@@ -12,8 +12,7 @@ Fetch API to make requests to an external data source from Rick and Morty API (h
 
 
 Routes:
-- `/`                       Home page("https://") 
-- `api/users/login`               login page
+- `/`                       Home page
 
 - `GET api/season1`         to retrieve all episodes of season1
 - `GET api/season2`         to retrieve all episodes of season2
@@ -27,6 +26,9 @@ Routes:
 - `DELETE /api/reviews/:id` to delete a review 
 
 Not activated routes:
+- `api/users/login`         Login page
+- `api/users/signup`        Signup page
+
 - `GET api/season3`         to retrieve all episodes of season3
 - `GET api/season4`         to retrieve all episodes of season4
 - `GET api/season5`         to retrieve all episodes of season5
