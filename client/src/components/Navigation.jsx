@@ -22,11 +22,14 @@ const Navigation = () => {
               navbarScroll
             >
               <NavDropdown title="Episodes" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/api/season1">Season 1</NavDropdown.Item>
-                <NavDropdown.Item href="/api/season2">Season 2</NavDropdown.Item>
+                {/* <Link className="" to={`/api/season1`}>Season 1</Link>
+                <Link className="" to={`/api/season2`}>Season 2</Link> */}
+                <NavDropdown.Item as={Link} to={`/api/season1`}>Season 1</NavDropdown.Item> 
+                <NavDropdown.Item as={Link} to={`/api/season2`}>Season 2</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="/api/reviews">Reviews</Nav.Link> 
+              <Nav.Link as={Link} to={`/api/reviews`}>Reviews</Nav.Link>  
+              {/* <Link className="" to={`/api/reviews`}>Reviews</Link> */}
             </Nav>
             <Form className="d-flex">
               <Form.Control
